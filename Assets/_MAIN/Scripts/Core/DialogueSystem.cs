@@ -1,10 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using TMPro;
 
-public class NewBehaviourScript : MonoBehaviour
+public class DialogueSystem : MonoBehaviour
 {
-    [SerializeField] private DialogueContainer dialogueContainer = new DialogueContainer();
+    public DialogueContainer dialogueContainer = new DialogueContainer();
+
+
+    public static DialogueSystem instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        instance = this;
+        else
+            DestroyImmediate(gameObject);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
