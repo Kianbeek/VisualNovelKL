@@ -22,8 +22,8 @@ namespace TESTING
 
         IEnumerator Test()
         {
-            /*            Character Kian = CharacterManager.instance.CreateCharacter("Kian");
-                        Character Jasha = CharacterManager.instance.CreateCharacter("Jasha");
+/*                        Character Mane = CharacterManager.instance.CreateCharacter("Mane");
+                        Character Reo = CharacterManager.instance.CreateCharacter("Reo");
                         Character Damian = CharacterManager.instance.CreateCharacter("Damian");
 
                         List<string> lines = new List<string>()
@@ -33,25 +33,25 @@ namespace TESTING
                             "And andother.",
                             "And a last one."
                         };
-                        yield return Kian.Say(lines);
+                        yield return Mane.Say(lines);
 
-                        Kian.SetNameColor(Color.blue);
-                        Kian.SetDialogueColor(Color.green);
-                        Kian.SetNameFont(tempFont);
-                        Kian.SetDialogueFont(tempFont);
+                        Mane.SetNameColor(Color.blue);
+                        Mane.SetDialogueColor(Color.green);
+                        Mane.SetNameFont(tempFont);
+                        Mane.SetDialogueFont(tempFont);
 
-                        yield return Kian.Say(lines);
+                        yield return Mane.Say(lines);
 
-                        Kian.ResetConfigurationData();
+                        Mane.ResetConfigurationData();
 
-                        yield return Kian.Say(lines);
+                        yield return Mane.Say(lines);
 
                         lines = new List<string>()
                         {
-                            "I am Jasha",
+                            "I am Reo",
                             "More lines {c} Here."
                         };
-                        yield return Jasha.Say(lines);
+                        yield return Reo.Say(lines);
 
                         lines = new List<string>()
                         {
@@ -61,7 +61,7 @@ namespace TESTING
                         yield return Damian.Say(lines);
 
                         Debug.Log("Finished");*/
-            /*   yield return new WaitForSeconds(1f);
+/*               yield return new WaitForSeconds(1f);
 
                Character Mane = CharacterManager.instance.CreateCharacter("Mane");
 
@@ -73,7 +73,9 @@ namespace TESTING
 
                yield return Mane.Show();
 
-               yield return Mane.Say("Hello!");*/
+               yield return Mane.Say("Hello!");
+
+                yield return Mane.Say("How are you?");*/
             /*Character Mane = CreateCharacter("Mane");
             Character Mane2 = CreateCharacter("Mane2 as Mane");
 
@@ -82,42 +84,42 @@ namespace TESTING
 
             yield return null;*/
 
-/*            Character_Sprite Mane = CreateCharacter("Mane") as Character_Sprite;
-            
-
-            Mane.Show();
-
-            Sprite faceSprite = Mane.GetSprite("Anger");
-
-            Mane.SetSprite(faceSprite);
-  
-            //faceSprite = Mane.GetSprite("Happy");
-
-            yield return new WaitForSeconds(2f);
-
-            faceSprite = Mane.GetSprite("Happy");
-
-            Mane.SetSprite(faceSprite);*/
-
-            Character_Sprite Mane = CreateCharacter("Mane") as Character_Sprite;
-
-            yield return new WaitForSeconds(1);
-
-            Mane.Show();
-
-            Sprite face = Mane.GetSprite("Happy");
-            Mane.TransitionSprite(face);
-            yield return Mane.TransitionSprite(face);
-
-            Debug.Log($"Visible = {Mane.isVisible}");
-
-            yield return new WaitForSeconds(1);
-
-            Mane.TransitionSprite(Mane.GetSprite("Anger"));
+ /*                       Character_Sprite Mane = CreateCharacter("Mane") as Character_Sprite;
 
 
+                        Mane.Show();
 
-            yield return null;
+                        Sprite faceSprite = Mane.GetSprite("Anger");
+
+                        Mane.SetSprite(faceSprite);
+
+                        //faceSprite = Mane.GetSprite("Happy");
+
+                        yield return new WaitForSeconds(2f);
+
+                        faceSprite = Mane.GetSprite("Happy");
+
+                        Mane.SetSprite(faceSprite);*/
+
+                       Character_Sprite Mane = CreateCharacter("Mane") as Character_Sprite;
+
+                        yield return new WaitForSeconds(1);
+
+                        Mane.Show();
+
+                        Sprite face = Mane.GetSprite("Happy");
+                        Mane.TransitionSprite(face);
+                        yield return Mane.TransitionSprite(face);
+
+                        Debug.Log($"Visible = {Mane.isVisible}");
+
+                        yield return new WaitForSeconds(3);
+
+                        Mane.TransitionSprite(Mane.GetSprite("Anger"));
+
+
+
+                        yield return null;
         }    
     }
 }
