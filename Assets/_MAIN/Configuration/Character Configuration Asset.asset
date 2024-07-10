@@ -13,22 +13,22 @@ MonoBehaviour:
   m_Name: Character Configuration Asset
   m_EditorClassIdentifier: 
   characters:
-  - name: Juliette
-    alias: j
+  - name: Mane
+    alias: M
     characterType: 1
     nameColor: {r: 1, g: 1, b: 1, a: 1}
     dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     dialogueFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  - name: Robin
-    alias: r
+  - name: Reo
+    alias: R
     characterType: 1
     nameColor: {r: 1, g: 0, b: 0, a: 1}
     dialogueColor: {r: 1, g: 0, b: 0, a: 1}
     nameFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     dialogueFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  - name: Lamine
-    alias: Lamine
+  - name: Damian
+    alias: D
     characterType: 0
     nameColor: {r: 1, g: 1, b: 1, a: 1}
     dialogueColor: {r: 1, g: 1, b: 1, a: 1}
